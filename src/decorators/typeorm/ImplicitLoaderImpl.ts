@@ -55,6 +55,9 @@ async function handler<V>(
     throw Error("Connection is not available");
   }
 
+  const existingValue = root?.[relation.propertyName];
+  if (existingValue) return existingValue;
+
   const serviceId = `tgd-typeorm#${relation.entityMetadata.tableName}#${relation.propertyName}`;
   const container = Container.of(requestId);
   if (!container.has(serviceId)) {
