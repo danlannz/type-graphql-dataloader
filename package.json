@@ -1,14 +1,17 @@
 {
-  "name": "type-graphql-dataloader",
+  "name": "@paloma-group/type-graphql-dataloader",
   "description": "A utility to use DataLoader with TypeGraphQL without fuss",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "author": {
     "name": "Kazuaki Tanida",
     "url": "https://github.com/slaypni"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/slaypni/type-graphql-dataloader.git"
+    "url": "https://github.com/paloma-group/type-graphql-dataloader.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/paloma-group"
   },
   "keywords": [
     "typescript",
